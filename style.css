@@ -1,0 +1,121 @@
+body {
+  background-color: rgb(0, 0, 0, 0.9);
+  
+}
+
+header {
+  font-size: 64px;
+  font-family: "Ubuntu", cursive;
+  text-align: center;
+  color: lightblue;
+  text-decoration: none solid rgb(85, 85, 85);
+  letter-spacing: 25px;
+  
+
+}
+span {
+  color: red;
+  font-family: cursive;
+  font-weight: 700px;
+  
+}
+#image {
+  width: 500px;
+  border-radius: 50px;
+
+  outline: rgb(255, 0, 0) dashed 0, 8px;
+  box-shadow: rgb(255, 0, 0) 5px 5px 500px 0px;
+}
+.img-div {
+  text-align: center;
+  display: inline;
+  overflow: hidden;
+  transform: none
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.date{
+    font-size: 20px;
+    letter-spacing: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.par {
+  text-align: justify;
+  font-size: 32px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+}
+.par2{
+  font-size: 32px;
+  font-family: "Ubuntu", cursive;
+  color: darkred;
+}
+.liste{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;    
+}
+.liste li{
+    padding-top: 25px;
+}
+footer{
+    color: white;
+    font-size: 32px;
+    margin-top: 70px;  
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+footer p{
+    display: inline;
+    text-align: center;
+    
+}
+footer a{
+    border: 2px solid rgba(255, 55, 0, 0.479);
+    color: orange;
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+footer a:hover{
+    background-color: rgba(255, 55, 0, 0.479);
+    color: orange;
+    border: orange;
+    font-size: 40px;
+}
+.cursor{
+    z-index: 999;
+    position: fixed ;
+    background: #a22f05;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #a22f05,
+                0 0 60px  #a22f05,
+                0 0 100px #a22f05;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%); 
+    display: none;   
+
+}
+@keyframes colors{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.cursor::before{
+    content:"";
+    position: absolute;
+    background: #a22f05;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+}
+
+
